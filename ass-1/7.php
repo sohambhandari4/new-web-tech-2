@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
     <title>File Upload and Information Display</title>
 </head>
-<body>
-    <h2>File Upload and Information Display</h2>
-
+<body>   <h2>File Upload and Information Display</h2>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["file"])) 
     {
@@ -31,8 +28,7 @@
             echo "<p>Error occurred while uploading the file.</p>";
         }
     }
-    ?>
-
+    ?>
     <form method="post" enctype="multipart/form-data">
         <label>Select File:</label>
         <input type="file" name="file"><br><br>
